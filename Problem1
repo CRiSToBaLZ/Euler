@@ -1,0 +1,20 @@
+puts 'What is the starting number?'
+start = gets.chomp
+number = start.to_i
+puts
+puts 'What is the ending number?'
+end = gets.chomp
+end_num = end.to_i
+sum = 0
+puts
+
+while number <= end_num
+	if number%3 == 0
+		sum += number
+	elsif number%5 == 0
+		sum += number
+	end
+	number += 1
+end
+
+puts number
